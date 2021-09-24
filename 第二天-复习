@@ -1,0 +1,38 @@
+一 、复习一下昨天的命令
+--创建数据库
+create database new-name
+on primary
+(name='',
+filename='',
+size=,
+maxsize=,
+filegrowth=)
+--删除数据库
+drop database name
+--一般不建议使用这个命令进行删除数据库。
+--修改数据库
+alter database name 
+modify file
+(需要修改的属性--注：这里无法直接修改数据物理地址)
+--添加数据库文件
+alter database name
+add file
+(增加创建数据库的属性)
+--删除数据组
+alter database name
+remove file name
+--更改数据库名字
+alter database name
+modify file
+(name='oldname',
+newname='newname')
+--切换数据库
+use name
+--分离数据库
+sp-detach-db name
+--附加数据库
+create database newname
+on
+(filename='所附加的数据库的物理路径')
+for attach
+
