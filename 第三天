@@ -20,3 +20,13 @@ size=5MB,
 maxsize=30MB,
 filegrowth=10%
 )
+--创建了一个名字为bbms数据库
+--创建一个表
+create table cargar
+(
+cno int constraint pk_no primary key,--将cno设置成主键
+cname nchar(4) not null
+csex nchar(2) check(csex='男' or csex='女') not null
+ctime date 
+)
+--今天学习了创建表的操作，明天进行练习。
