@@ -1,0 +1,22 @@
+--今天学习了数据库中表的创建。
+创建表
+create table new_name
+(
+name_01 数据类型 是否设置为主键 是否为空
+name_02 
+.
+.
+)
+表的创建命令行上面的方法。
+例：
+创建一个篮球比赛信息的数据库
+--首先创建一个数据库
+create database bbms
+on primary
+(
+name='people',
+filename='d:\people.mdf',
+size=5MB,
+maxsize=30MB,
+filegrowth=10%
+)
